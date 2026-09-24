@@ -81,20 +81,52 @@ Compare the original modulating signal with the demodulated signal.
 * Execute the code.
 * If any Error, correct it in code and execute again.
 * Verify the generated waveform using Tabulation and Model Waveform.
+# PROGRAM
+am=6.3;
+
+fm=397;
+
+ac=12.6;
+
+fc=3970;
+
+fs=39700;
+
+t=0:1/fs:3/fm;
+
+em=amcos(23.14fmt);
+
+subplot(3,1,1);
+
+plot(t,em);
+
+ec=accos(23.14fct);
+
+subplot(3,1,2);
+
+plot(t,ec);
+
+eam=ac*(1+(em/ac)).cos(23.14fct);
+
+subplot(3,1,3);
+
+plot(t,eam);
 
 # TABULATION
 
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/de020c3b-52b7-4159-b023-f782f27852b1" />
 
 
-**Modulated Signal:**
+**OUTPUT:**
+<img width="1453" height="1021" alt="WhatsApp Image 2026-09-23 at 2 27 43 PM" src="https://github.com/user-attachments/assets/084555ac-85f4-4d8b-9d67-a9dbae25ba8e" />
 
-* Emax =
-* Emin =
+
+
+
 
 # CALCULATION
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/497a5dec-7ac6-4aaf-89d8-d31d8a0cb622" />
-
+RESULT: Thus the amplitude modulation and demodulation is experimentally done and the output is verified.
 
 
 
